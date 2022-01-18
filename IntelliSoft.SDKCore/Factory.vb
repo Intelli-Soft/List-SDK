@@ -6,14 +6,10 @@ Public Class Factory
     Private Property TempFileName As String = String.Empty
     Private mySDKInformations As List(Of SDKInformation)
 
-
-    Public Sub GetSDKs()
-        ReadSDKs()
-    End Sub
-    Public ReadOnly Property SDKInformations As List(Of SDKInformation)
+    Public ReadOnly Property GetSDKs As List(Of SDKInformation)
         Get
             If mySDKInformations Is Nothing Then
-                Throw New Exception("You need to run ReadSDKs method first")
+                ReadSDKs()
             End If
             Return mySDKInformations
         End Get
