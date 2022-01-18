@@ -1,4 +1,4 @@
-List all available SDK's 
+List all available SDK's (.NET Core)
 
 I needed to find out, which SDK is installed, to create a new solution via the dotnet.exe (command line)
 
